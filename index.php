@@ -21,7 +21,8 @@
 
 <html>
 <head>
-	<title></title>
+	<title>"oefening php</title>
+		<link rel="stylesheet" type="text/css" href="css\bootstrap.css">
 </head>
 <body>
 <h1>Registratie</h1>
@@ -35,17 +36,33 @@
 	
 
 <?php }else{ ?>
-<form method="post">
-	<p>naam:<input type="text" value="<?php echo $name ?>" name="name" size="15" maxlength="30">
+
+<div class="container">
+<link rel="stylesheet" type="text/css" href="css\signin.css">
+      <form class="form-signin" method="POST" role="form">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input name="name" type="name" class="form-control" placeholder="naam" required="" autofocus="">
+        <input name="username" type="name" class="form-control" placeholder="gebruikersnaam" required="" >
+        <input  name="password"type="password" class="form-control" placeholder="wachtwoord" required="">
+        
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="send" value="verzenden">verzend </button>
+      </form>
+
+    </div>
+
+
+
+
+	<!-- <p>naam:<input type="text" value="<?php echo $name ?>" name="name" size="15" maxlength="30">
 	</p>
 	<p>gebruikersnaam:<input type="text" value="<?php echo $username ?>" name="username" size="15" maxlength="30">
 	</p>
 	<p>wachtwoord: <input type="password" value="<?php echo $password ?>" name="password" size="15" maxlength="30">
 	</p>
 <input type="submit" name="send"
-value="verzenden" />
+value="verzenden" /> -->
 
-</form>
+
 
 
 <?php } ?>
