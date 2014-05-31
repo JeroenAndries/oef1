@@ -32,7 +32,7 @@
 <h1>gegevens:</h1>
 <p>naam ==> <?php echo $name ?>  </p>
 <p>gebruikersnaam ==> <?php echo $username ?>  </p>
-<p>gebruikersnaam ==> <?php echo $password ?>  </p>
+<p>wachtwoord ==> <?php echo $password ?>  </p>
 	
 
 <?php }else{ ?>
@@ -49,20 +49,6 @@
       </form>
 
     </div>
-
-
-
-
-	<!-- <p>naam:<input type="text" value="<?php echo $name ?>" name="name" size="15" maxlength="30">
-	</p>
-	<p>gebruikersnaam:<input type="text" value="<?php echo $username ?>" name="username" size="15" maxlength="30">
-	</p>
-	<p>wachtwoord: <input type="password" value="<?php echo $password ?>" name="password" size="15" maxlength="30">
-	</p>
-<input type="submit" name="send"
-value="verzenden" /> -->
-
-
 
 
 <?php } ?>
